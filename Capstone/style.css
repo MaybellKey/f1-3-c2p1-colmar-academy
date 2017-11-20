@@ -1,0 +1,928 @@
+body {
+ font-family: 'Hind Madurai', sans-serif;
+}
+
+body a {
+  font-weight: bold;
+}
+
+/*Header*/
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 64px;
+  background-color: white;
+  font-size: 2rem;
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+.mobile {
+  display: none;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  padding-right: 24px;
+  padding-left: 24px;
+  font-size: 1.2rm;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+}
+
+.header span {
+  padding-right: 16px;
+  margin: auto 0;
+  font-weight: normal;
+
+}
+
+
+@media only screen and (max-width: 560px) {
+.nav span {
+  display: none;
+}
+
+.logo img {
+  display: none;
+}
+
+#logo-text {
+  display: none;
+}
+
+ .header .mobile {
+   display: block;
+   width: 100%;
+ }
+
+ .container {
+   margin: 0 auto;
+   display: inline;
+   padding: 10px 10px;
+ }
+
+ .mobile img {
+   width: 120%;
+   height: 120%;
+ }
+
+ .header .mobile ul {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+   list-style-type: none;
+ }
+
+ .mobile li {
+   padding: 0;
+ }
+
+}
+
+/* First Banner Section */
+
+.banner1 {
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+.banner1 img {
+  width: 100%;
+}
+
+.banner1-image {
+  padding: 32px 24px;
+  width: 150%;
+}
+
+.banner1-right {
+  padding-top: 180px;
+  width: 100%;
+  padding-left: 24px;
+}
+
+.banner1-text h1 {
+  font-weight: 800;
+  font-size: 55px;
+  width: 70%;
+  line-height: 1.3;
+}
+
+.banner1-text h2 {
+  font-size: 25px;
+  width: 70%;
+  line-height: 1.3;
+}
+
+.button-container {
+  padding-top: 30px;
+}
+
+.banner1-button {
+  background-color: #239dce;
+  border-radius: 2px;
+  color: white;
+  padding: 8px;
+  width: 60%;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 560px) {
+
+  .banner1 {
+    justify-content: initial;
+    display: inline-block;
+    background-color: #e5e5e5;
+  }
+
+  .banner1 img {
+    padding: 0px 0px;
+  }
+
+  .banner1-image {
+    padding: 0px 0px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .banner1-right {
+    padding-top: 0px;
+    background-color: #e5e5e5;
+    margin-left: 0px;
+  }
+
+  .banner1-text h1 {
+    font-weight: bold;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0px;
+    padding-left: 16px;
+    width: 100%;
+    font-size: 4rem;
+    line-height: 1.3;
+  }
+
+  .banner1-text h2 {
+    padding-bottom: 0px;
+    margin-top: 0px;
+    padding-left: 16px;
+    width: 100%;
+    line-height: 1.2;
+  }
+
+  .button-container {
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+
+  .banner1-button {
+   padding: 15px 10px;
+   width: 90%;
+   font-size: 16px;
+   font-size: 2rem;
+   font-weight: bold;
+   text-align: center;
+   margin: 0 auto;
+ }
+
+}
+
+/* Second Banner Section */
+
+.banner2-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 32px;
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+.banner2-left {
+  width: 60%;
+}
+
+.banner2-content {
+  padding: 0px 24px;
+  padding-bottom: 32px;
+  width: 100%;
+}
+
+.banner2-content img {
+  width: 100%;
+}
+
+.banner2-content h1 {
+  font-weight: bold;
+  width: 100%;
+  font-size: 4rem;
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+
+.banner2-content p {
+  width: 100%;
+  font-weight: normal;
+  font-size: 2rem;
+  color: grey;
+}
+
+/* Second Banner - Right Section */
+
+.banner2-right {
+  width: 40%;
+  border-left: 1px solid #e5e5e5;
+}
+
+.orientation-container1 {
+  border-bottom: 1px solid #e5e5e5;
+  width: 100%;
+  height: 31%;
+}
+
+.orientation-thumb1 {
+  width: 35%;
+  float: left;
+}
+
+.orientation-thumb1 img {
+  display: block;
+  width: 100%;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+.orientation-post1 {
+  margin-left: 200px;
+  padding-top: 75px;
+  padding-left: 100px;
+}
+
+.orientation-post1 h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.orientation-post1 p {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.orientation-post1 a {
+  font-size: 2rem;
+}
+
+/* Second Banner - Right Section - 2nd row */
+
+.orientation-container2 {
+  width: 100%;
+  height: 31%;
+}
+
+.orientation-thumb2 {
+  width: 35%;
+  float: left;
+}
+
+.orientation-thumb2 img {
+  display: block;
+  width: 100%;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+.orientation-post2 {
+  margin-left: 200px;
+  padding-top: 75px;
+  padding-left: 100px;
+}
+
+.orientation-post2 h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.orientation-post2 p {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.orientation-post2 a {
+  font-size: 2rem;
+}
+
+/* Second Banner - Right Section - 3rd row */
+
+.orientation-container3 {
+  width: 100%;
+  height: 31%;
+  background-color: #e5e5e5;
+}
+
+.orientation-thumb3 {
+  width: 35%;
+  float: left;
+}
+
+.orientation-thumb3 img {
+  display: block;
+  width: 100%;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+.orientation-post3 {
+  margin-left: 200px;
+  padding-top: 75px;
+  padding-left: 100px;
+}
+
+.orientation-post3 h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.orientation-post3 p {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.orientation-post3 a {
+  font-size: 2rem;
+}
+
+.mobile-banner2 {
+  display: none;
+}
+
+/*Mobile Version of 2nd section*/
+
+@media only screen and (max-width: 560px) {
+  .banner2-left {
+    display: none;
+  }
+
+  .banner2-right {
+    display: none;
+  }
+
+  .mobile-banner2 {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .mobile-banner2 h2 {
+    font-weight: bold;
+  }
+
+  .mobile-banner2 p {
+    font-weight: normal;
+    font-size: 2rem;
+  }
+
+  .mobile-banner2 a {
+    font-size: 2rem;
+  }
+
+  .banner2-container {
+   padding-top: 16px;
+   padding-bottom: 32px;
+   border-bottom: 1px solid #e5e5e5;
+ }
+
+ .orientation-date {
+   padding: 0px 16px;
+ }
+
+ .orientation-date img {
+   width: 100%
+ }
+
+ .orientation-date h2 {
+   padding-left: 16px;
+ }
+
+ .orientation-date p {
+   padding-left: 16px;
+ }
+
+ .orientation-date a {
+   padding-left: 16px;
+ }
+
+ .orientation-date2 {
+   padding-left: 16px;
+   padding-right: 16px;
+   padding-top: 64px;
+ }
+
+ .orientation-date2 img {
+   width: 100%
+ }
+
+ .orientation-date2 h2 {
+   padding-left: 16px;
+ }
+
+ .orientation-date2 p {
+   padding-left: 16px;
+ }
+
+ .orientation-date2 a {
+   padding-left: 16px;
+ }
+
+ .orientation-date3 {
+   padding-left: 16px;
+   padding-right: 16px;
+   padding-top: 64px;
+ }
+
+ .orientation-date3 img {
+   width: 100%;
+ }
+
+ .orientation-date3 h2 {
+   padding-left: 16px;
+ }
+
+ .orientation-date3 p {
+   padding-left: 16px;
+ }
+
+ .orientation-date3 a {
+   padding-left: 16px;
+ }
+
+}
+
+/*Course List section*/
+
+.course-section {
+  background-color: #e5e5e5;
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+.course-list {
+  background-color: #e5e5e5;
+  margin: 0px 72px;
+}
+
+.course-list-title h1 {
+  padding: 32px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 900;
+}
+
+.gadgets {
+  max-width: 930px;
+  margin: 0 auto;
+}
+
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+#title {
+  text-align: left;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+}
+
+.course-text {
+  height: 170px;
+  background-color: white;
+  margin-bottom: 32px;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.pen {
+  width: 30%;
+}
+
+.pen-image {
+  height: 9em;
+  background-repeat: no-repeat;
+  padding: 5em 0;
+  align-items: center;
+  display: flex;
+}
+
+.pen img {
+  max-width: 100%;
+}
+
+.pen span {
+  background-color: white;
+  color: black;
+  display: block;
+  text-align: center;
+  text-align: left;
+  color: grey;
+  padding: 8px 16px;
+}
+
+.watch {
+  width: 30%;
+}
+
+.watch-image {
+  height: 9em;
+  background-repeat: no-repeat;
+  padding: 5em 0;
+  align-items: center;
+  display: flex;
+}
+
+.watch img {
+  max-width: 100%;
+}
+
+.watch span {
+  background-color: white;
+  color: black;
+  display: block;
+  text-align: center;
+  text-align: left;
+  color: grey;
+  padding: 8px 16px;
+}
+
+.thermal {
+  width: 30%;
+}
+
+.thermal-image {
+  height: 9em;
+  background-repeat: no-repeat;
+  padding: 5em 0;
+  align-items: center;
+  display: flex;
+}
+
+.thermal img {
+  max-width: 100%;
+}
+
+.thermal span {
+  background-color: white;
+  color: black;
+  display: block;
+  text-align: center;
+  text-align: left;
+  color: grey;
+  padding: 8px 16px;
+}
+
+/*2nd row*/
+
+.gadgets1 {
+  max-width: 930px;
+  margin: 0 auto;
+}
+
+.boxes1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0em 0 0;
+}
+
+.pen1 {
+  width: 30%;
+}
+
+.pen-image1 {
+  height: 9em;
+  background-repeat: no-repeat;
+  padding: 5em 0;
+  align-items: center;
+  display: flex;
+}
+
+.pen1 img {
+  max-width: 100%;
+}
+
+.pen1 span {
+  background-color: white;
+  color: black;
+  display: block;
+  text-align: center;
+  text-align: left;
+  color: grey;
+  padding: 8px 16px;
+}
+
+.watch1 {
+  width: 30%;
+}
+
+.watch-image1 {
+  height: 9em;
+  background-repeat: no-repeat;
+  padding: 5em 0;
+  align-items: center;
+  display: flex;
+}
+
+.watch1 img {
+  max-width: 100%;
+}
+
+.watch1 span {
+  background-color: white;
+  color: black;
+  display: block;
+  text-align: center;
+  text-align: left;
+  color: grey;
+  padding: 8px 16px;
+}
+
+.thermal1 {
+  width: 30%;
+}
+
+.thermal-image1 {
+  height: 9em;
+  background-repeat: no-repeat;
+  padding: 5em 0;
+  align-items: center;
+  display: flex;
+}
+
+.thermal1 img {
+  max-width: 100%;
+}
+
+.thermal1 span {
+  background-color: white;
+  color: black;
+  display: block;
+  text-align: center;
+  text-align: left;
+  color: grey;
+  padding: 8px 16px;
+}
+
+.mobile-course {
+  display: none;
+}
+
+/*Mobile Course List section*/
+
+@media only screen and (max-width: 560px) {
+
+  .course-section {
+  display: none;
+}
+
+  .mobile-course {
+    display: inline;
+  }
+
+  .mobile-course-list-title h1 {
+  padding-top: 32px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+  .mobile-course-list {
+  padding-top: 16px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.mobile-course-list h2 {
+  color: black;
+  background-color: #e5e5e5;
+  font-size: 2rem;
+  padding-top: 16px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  margin: 8px;
+}
+
+ }
+
+/*Thesis Section*/
+
+.banner3-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+.thesis-title h1 {
+  padding: 32px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 900;
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+.banner3-left {
+  width: 60%;
+}
+
+.banner3-content {
+  padding: 0px 24px;
+  padding-bottom: 32px;
+  width: 100%;
+}
+
+.banner3-content img {
+  width: 60%;
+}
+
+.banner3-content video {
+  width: 100%;
+  height: 100%;
+}
+
+.banner3-content h1 {
+  font-weight: bold;
+  width: 100%;
+  font-size: 2.5rem;
+  padding-top: 12px;
+  padding-bottom: 8px;
+}
+
+.banner3-content p {
+  width: 100%;
+  font-weight: normal;
+  font-size: 1.6rem;
+  color: grey;
+}
+
+/* Second Banner - Right Section */
+
+.banner3-right {
+  width: 40%;
+}
+
+.orientation-container5 {
+  width: 100%;
+  height: 35%;
+  background-color: #e5e5e5;
+}
+
+.orientation-thumb5 {
+  width: 35%;
+  float: left;
+}
+
+.orientation-thumb5 img {
+  display: block;
+  width: 100%;
+  padding: 16px 16px;
+}
+
+.orientation-post5 {
+  margin-left: 100px;
+  padding-top: 75px;
+  margin: 0 auto;
+}
+
+.orientation-post5 h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.orientation-post5 p {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.orientation-post5 a {
+  font-size: 2rem;
+}
+
+/* Second Banner - Right Section - 2nd row */
+
+.orientation-container6 {
+  width: 100%;
+  height: 31%;
+  float: left;
+}
+
+.orientation-thumb6 {
+  width: 35%;
+  float: left;
+}
+
+.orientation-thumb6 img {
+  display: block;
+  width: 100%;
+  padding: 16px 16px;
+}
+
+.orientation-post6 {
+  margin-left: 100px;
+  padding-top: 75px;
+  padding-left: 90px;
+  margin: 0 auto;
+}
+
+.orientation-post6 h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.orientation-post6 p {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.orientation-post6 a {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.mobile-banner3 {
+  display: none;
+}
+
+@media only screen and (max-width: 560px) {
+.banner3-section {
+  display: none;
+  }
+
+  .mobile-banner3 {
+    display: inline;
+  }
+
+  .mobile-thesis-title {
+    padding-top: 32px;
+    padding-bottom: 16px;
+  }
+
+  .mobile-thesis-title h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.5rem;
+  }
+
+}
+/* Footer Section */
+.footer {
+  height: 100px;
+  font-size: 1.5rem;
+  border-top: 2px solid #e5e5e5;
+  color: grey;
+  font-weight: normal;
+  padding-top: 16px;
+  padding-left: 24px;
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+.terms {
+  float: right;
+  padding-right: 24px;
+}
+
+#space {
+  padding-right: 8px;
+}
+
+@media only screen and (max-width: 560px) {
+  .footer {
+    margin-top: 24px;
+  }
+
+  .terms {
+    display: none;
+  }
+
+  .copyright {
+    padding: 16px;
+  }
+}
